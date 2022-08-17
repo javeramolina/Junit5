@@ -20,7 +20,8 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.*;
 
-//@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+//@TestInstance(TestInstance.Lifecycle.PER_METHOD)   --> default is PER_METHOD
+//@TestInstance(TestInstance.Lifecycle.PER_CLASS)   --> if you can but not recommended, you can remove static in method BeforeAll and AfterAll
 class CuentaTest {
     Cuenta cuenta;
 
